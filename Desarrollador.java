@@ -3,9 +3,6 @@ import java.lang.*;
 public class Desarrollador implements Comparable<Desarrollador> {
 	
 	//ATRIBUTOS 
-	private String nombre;
-	private int tipo; 
-	
 	/*
 	 * Tipos de desarrolladores: 
 	 * 1 ---- Desarrolladores Java 
@@ -16,6 +13,10 @@ public class Desarrollador implements Comparable<Desarrollador> {
 	 * 6 ---- Desarrolladores Web, Movil
 	 * 7 ---- Desarrolladores Java, Web, Movil
 	 */
+	
+	private String nombre;
+	private int tipo; 
+	
 	
 	//Constructor de la clase 
 	public Desarrollador(String nombredes, int tipodes){
@@ -41,7 +42,22 @@ public class Desarrollador implements Comparable<Desarrollador> {
 		this.tipo=tipodes; 
 	}
 	
-
+	//Codigo de Hash------------------------------------------------
+	public int codHash(){
+		return (nombre.hashCode()+(tipo*100)); //Bytes 
+	}
+	
+	//Mostrar datos ingresados--------------------------------------
+	public String toString(){
+		String formato = new String ("");
+		
+		//Tipos de desarrolladores
+		switch (tipo){
+		case 1:{
+			
+		}//1
+		}
+	}
 
 	@Override
 	public int compareTo(Desarrollador o) {

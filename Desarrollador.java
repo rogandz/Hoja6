@@ -54,15 +54,43 @@ public class Desarrollador implements Comparable<Desarrollador> {
 		//Tipos de desarrolladores
 		switch (tipo){
 		case 1:{
-			
+			formato="Nombre: "+nombre+" Desarrollador: Java";
+			break;
 		}//1
-		}
+		case 2:{
+			formato="Nombre: "+nombre+" Desarrollador: Web";
+			break;
+		}//2
+		case 3:{
+			formato="Nombre: "+nombre+" Desarrollador: Movil";
+			break;
+		}//3
+		case 4:{
+			formato="Nombre: "+nombre+" Desarrollador: Java y Web";
+			break;
+		}//4
+		case 5:{
+			formato="Nombre: "+nombre+" Desarrollador: Java y Movil";
+			break;
+		}//5
+		case 6:{
+			formato="Nombre: "+nombre+" Desarrollador: Web y Movil";
+			break;
+		}//6
+		case 7:{
+			formato="Nombre: "+nombre+" Desarrollador: Java, Web y Movil";
+			break;
+		}//7
+		}//switch
+		return formato;
 	}
 
 	@Override
 	public int compareTo(Desarrollador o) {
 		// TODO Auto-generated method stub
-		return 0;
+		int a = this.hashCode();
+		int b = o.hashCode();
+		return Integer.compare(a, b);
 	}
 
 }

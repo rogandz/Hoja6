@@ -4,7 +4,6 @@ public class Factory {
 	
 	public Set<Desarrollador> Objeto (){
 		Scanner tipo = new Scanner (System.in);
-		int opcion = 0;
 		Object stackob;
 		stackob = new Object ();
 		

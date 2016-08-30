@@ -35,5 +35,22 @@ public class Metodos {
 		return generador;
 	}
 	
-
+	//METODOS A IMPLEMENTAR--------------------------------------------------------------------------------
+	
+	public void agregar(){
+		String nombre = "";
+		int tipo=0; 
+		System.out.println("Ingrese el nombre del desarrollador: ");
+		Scanner teclado = new Scanner (System.in);
+		nombre=teclado.nextLine();
+		System.out.println("Ingrese el tipo del desarrollador: ");
+		tipo=teclado.nextInt();
+		
+		Desarrollador desarrollador = new Desarrollador(nombre,tipo);
+		generador.add(desarrollador);
+		String formato = desarrollador.toString();
+		System.out.println(formato);
+	}
+	
+	
 }

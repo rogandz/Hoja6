@@ -16,7 +16,7 @@ public class Factory {
 		
 		while (entrada !=0) 
 		{
-			
+			//Defensiva
 		    if (entrada < 1 || entrada > 3) 
 		    {
 		        System.out.println("Presione: 1, 2 o 3");
@@ -39,13 +39,13 @@ public class Factory {
 		    	entrada=0; 
 		    }//else if TreeSet
 		    
-		    else if(entrada == 3) //Salir
+		    else if(entrada == 3) //LinkedHashSet
 		    {
 		    	System.out.println("---------LINKEDHASHSET Seleccionado---------");
-		    	TreeSet<Desarrollador> obLinked = new TreeSet<Desarrollador>();
+		    	LinkedHashSet<Desarrollador> obLinked = new LinkedHashSet<Desarrollador>();
 		    	stackob = obLinked;
 		    	entrada=0; 
-		    }//else if Salir
+		    }//Linkedhashset
 		}//while 
 		return (Set<Desarrollador>)stackob;
 }//main

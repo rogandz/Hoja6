@@ -14,25 +14,25 @@ public class Main {
 		//Creacion del objeto metodos
 		Metodos met = new Metodos();
 		
-		
-		System.out.println("MENU-----------------");
-		System.out.println("Ingrese el numero de la opcion que desea realizar");
-		System.out.println("1. Agregar desarrollador");
-		System.out.println("2. Datos de los desarrolladores ");
-		System.out.println("3. Salir del programa");
-		Scanner elegido = new Scanner(System.in);
-		System.out.println();
-		System.out.println("Presione: 1, 2, 3");
-		int entrada = elegido.nextInt();
+		int entrada = 0;
 		
 		//Progra defensiva
 				while (entrada != 4) 
 				{
+					System.out.println("MENU-----------------");
+					System.out.println("Ingrese el numero de la opcion que desea realizar");
+					System.out.println("1. Agregar desarrollador");
+					System.out.println("2. Datos de los desarrolladores ");
+					System.out.println("3. Salir del programa");
+					Scanner elegido1 = new Scanner(System.in);
+					System.out.println();
+					System.out.println("Presione: 1, 2, 3");
+					entrada = elegido1.nextInt();
 					
 				    if (entrada < 1 || entrada > 3) 
 				    {
 				        System.out.println("Presione: 1, 2 o 3");
-				        entrada = elegido.nextInt();
+				        entrada = elegido1.nextInt();
 				    }
 
 				    else if(entrada == 1) //Agregar desarrollador 
